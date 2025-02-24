@@ -37,7 +37,7 @@ export default function WritingPage() {
               <hr className="brcx" />
               <div className="flex-start w-full items-center inline-block">
                 <div className="flex items-center">
-                  <p className="leading-[30px] text-left mr-[17px] text-black font-[450] text-[17px]">
+                  <p className="leading-[30px] text-left mr-[17px] text-black dark:text-white font-[450] text-[17px]">
                     <strong>Viết cho năm mới 2025</strong>
                   </p>
                   <p className="text-[17px] mr-4">Viết linh tinh</p>
@@ -66,7 +66,6 @@ export default function WritingPage() {
             </div>
           </a>
         </div>
-
       </article>
     </main>
   );
