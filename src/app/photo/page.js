@@ -1,7 +1,7 @@
 export default function PhotoPage() {
   return (
-    <main className="w-full">
-      <h1 className="text-[40px] font-mono font-[550] leading-[48px]">
+    <main>
+      <h1>
         Trang này đang phát triển...
       </h1>
     </main>

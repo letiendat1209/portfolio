@@ -12,11 +12,9 @@ export default function ProjectPage() {
   }, []);
   console.log(repos);
   return (
-    <main className="w-full">
+    <main>
       <header>
-        <h1 className="text-[40px] font-mono font-[550] leading-[48px] dark:text-white">
-          Dự Án
-        </h1>
+        <h1>Dự Án</h1>
       </header>
       <article>
         <p className="space">

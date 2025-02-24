@@ -1,10 +1,12 @@
+export const metadata = {
+  title: "Writing",
+  description: "About",
+};
 export default function WritingPage() {
   return (
-    <main className="w-full">
+    <main>
       <header>
-        <h1 className="text-[40px] font-mono font-[550] leading-[48px]">
-          Blogs - Viết linh tinh
-        </h1>
+        <h1>Blogs - Viết linh tinh</h1>
       </header>
       <article>
         <p className="space">Những cảm xúc hoặc chỉ đơn giản là viết.</p>
@@ -30,8 +32,8 @@ export default function WritingPage() {
             <div className="flex-col p-[25px] mx[-25px] mx-[-24px] rounded-3xl justify-between hover:bg-[#F7F8F9] dark:hover:bg-[#222222]">
               <div className="relative w-full h-[200px] overflow-hidden cursor-pointer mb-4 rounded-[12px]">
                 <img
-                  src="https://khoanguyen.codes/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fylftmc9jqqoq%2F4PWu74WACz3uCEcFjjmuru%2F2a4042bee337df0750a4380b4efadd94%2FIMG_2984.PNG&w=1920&q=75"
-                  alt=""
+                  src="https://images.unsplash.com/photo-1739980873400-3cb5c566df2f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="forest"
                 />
               </div>
               <hr className="brcx" />
@@ -50,15 +52,14 @@ export default function WritingPage() {
                 <div className="my-1">
                   <p>
                     / Năm nào cũng viết một cái bài gì đó trước tết. / Năm nay
-                    tớ không viết gì cả, tớ muốn cầm tay người yêu tớ qua năm
-                    mới. Chắc vậy là đủ,những điều tổn thương, nỗi đau chực chờ,
-                    những con người cũ, ...
+                    tớ không viết gì cả, tớ lười, tớ sẽ suy nghĩ và phát triển
+                    phần này sau, ...
                   </p>
                   <div className="flex items-center">
                     <p>
                       <strong>@Author: </strong>
                     </p>
-                    <p className="ml-1 mr-4">@yun.ng</p>
+                    <p className="ml-1 mr-4">@ledat.09</p>
                     <hr className="hrlight" />
                   </div>
                 </div>

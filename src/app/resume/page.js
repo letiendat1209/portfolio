@@ -17,17 +17,15 @@ export default function ResumePage() {
   }, []);
 
   return (
-    <main className="w-full">
-      <h1 className="text-[40px] font-mono font-[550] leading-[48px]">
-        Resume
-      </h1>
+    <main>
+      <h1>Resume</h1>
       <p>Resume cá nhân của tớ cho các nhà tuyển dụng.</p>
       <hr className="hrlight" />
       <article>
         <div className="resume">
           {/* Nhấp vào ảnh để mở modal */}
           <img
-            src="https://khoanguyen.codes/image/cv.svg"
+            src=""
             alt="resume"
             className="cursor-pointer transition-transform duration-200"
             onClick={() => setIsOpen(true)}
@@ -55,7 +53,7 @@ export default function ResumePage() {
             onClick={() => setIsOpen(false)}
           >
             <motion.img
-              src="https://khoanguyen.codes/image/cv.svg"
+              src=""
               alt="resume"
               className="max-w-[100%] max-h-[100%] rounded-lg shadow-lg"
               initial={{ scale: 0.8, opacity: 0 }}

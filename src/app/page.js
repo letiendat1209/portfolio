@@ -1,5 +1,9 @@
 import Footer from "@/components/footer";
 
+export const metadata = {
+  title: "Trang Chủ",
+  description: "Portfolio by LeTienDat",
+};
 export default function Home() {
   return (
     <main>
@@ -38,12 +42,7 @@ export default function Home() {
           <p>
             <strong>Lê Tiến Đạt</strong>
           </p>
-          <p>
-            © 2025 Lê Tiến Đạt. All rights reserved! • Base on template{" "}
-            <a href="https://github.com/yunkhngn" target="_blank">
-              <strong>yun.khngn</strong>
-            </a>
-          </p>
+          <p>© 2025 Lê Tiến Đạt. All rights reserved!</p>
         </footer>
       </article>
     </main>

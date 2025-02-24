@@ -13,7 +13,9 @@
   padding: 0;
   font: inherit;
 }
-
+main {
+  width: 100%;
+}
 img,
 picture,
 svg,
@@ -45,6 +47,15 @@ hr {
   flex-shrink: 0;
   transition: border-bottom .25s ease-out;
 }
+h1 {
+  font-size: 40px;
+  font-weight: 550;
+  line-height: 48px;
+  font-family: monospace;
+}
+p {
+  
+}
 :root {
   --background-color-light: #ffffff;
   --background-color-dark: #161616;
@@ -63,6 +74,10 @@ body {
 html.dark {
   background-color: var(--background-color-dark);
   color: var(--text-color-dark);
+
+  h1 {
+    color:#ffffff
+  }
   .keyboard {
       border: 1px solid hsla(0, 0%, 100%, .077);
   }
@@ -117,15 +132,13 @@ html.light {
   background-color: var(--background-color-light);
   color: var(--text-color-light);
   border-color: rgb(255 255 255 / 0.2);
-  
+  h1 {
+      color: black;
+    }
   .keyboard:hover {
       border: 1px solid hsla(0, 0%, 0%, .25);
       color: #1f1f1f;
       cursor: pointer;
-    }
-
-  h1 {
-      color: black;
     }
   .brcx {
     background: rgba(0, 0, 0, 0.07);

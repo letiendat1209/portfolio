@@ -2,14 +2,18 @@ import "@/app/styles/about.css";
 import Footer from "@/components/footer";
 import Snake from "@/components/snake";
 import Image from "next/image";
+
+export const metadata = {
+  title: "About",
+  description: "About",
+};
 export default function AboutPage() {
   return (
-    <main className="w-full">
+    <main>
       <header>
-        <h1 className="text-[40px] font-mono font-[550] leading-[48px]">
-          Giới thiệu
-        </h1>
+        <h1>Giới thiệu</h1>
       </header>
+
       <article>
         <p className="space">Một chút điều thú vị về tớ và những trải lòng.</p>
         <hr className="hrlight" />
@@ -18,7 +22,7 @@ export default function AboutPage() {
           <div className="avatar">
             <Image
               className="avatar"
-              src="/about.svg" // Không cần "public/"
+              src="/about.svg"
               alt="Avatar"
               width={200}
               height={200}
@@ -159,7 +163,7 @@ export default function AboutPage() {
                   </div>
                   <p className="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest">
                     {" "}
-                    October 6th - November 19th.{" "}
+                    06/0/2024 - 19/11/2024.{" "}
                   </p>
                   <h3 className="my-1 text-lg font-bold dark:text-neutral-100">
                     BOT Movie Website
