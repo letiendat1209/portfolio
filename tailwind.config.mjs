@@ -5,11 +5,12 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class", // Chế độ tối dựa trên class "dark"
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // background: "var(--background-color-dark)",
+        text: "var(--text-color-dark)",
       },
     },
   },
