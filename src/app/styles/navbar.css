@@ -13,7 +13,7 @@ html.light {
         background: #ffff;
         border: 0.5px solid rgb(219, 219, 219);
     }
-    .brcys {
+    .bar-y {
         height: 42px;
         margin: 5px;
         border-right: 1.9px solid rgba(0, 0, 0, 0.07);
@@ -36,7 +36,7 @@ html.dark {
         background: rgb(22, 22, 22);
         border: 0.5px solid rgb(62, 62, 62);
     }
-    .brcys {
+    .bar-y {
         height: 42px;
         margin: 5px;
         border-right: 1.9px solid hsl(0 0% 100% / 0.077);
@@ -196,4 +196,41 @@ html.dark {
         overflow: auto hidden;
         justify-content: left;
     }
+}
+
+
+/* Thêm class cho hiệu ứng loading trên span */
+.Icon.loading {
+    position: relative;
+    pointer-events: none;
+    /* Ngăn click khi đang loading */
+}
+
+.Icon.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #999;
+    border-top: 2px solid #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Ẩn icon khi đang loading */
+.Icon.loading>svg {
+    opacity: 0;
 }
