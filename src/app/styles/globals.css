@@ -61,6 +61,7 @@ p {
   --background-color-dark: #161616;
   --text-color-light: #6F6F6F;
   --text-color-dark: #a0a0a0;
+
 }
 
 body {
@@ -136,7 +137,7 @@ html.light {
       color: black;
     }
   .keyboard:hover {
-      border: 1px solid hsla(0, 0%, 0%, .25);
+      border: 1px solid rgb(133, 133, 133);;
       color: #1f1f1f;
       cursor: pointer;
     }
@@ -161,7 +162,7 @@ html.light {
     font-weight: 500;
     color: rgb(133, 133, 133);
     background: rgba(0, 0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.35);
     height: 2rem;
     position: relative;
     padding-right: 0.75rem;

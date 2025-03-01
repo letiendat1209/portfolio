@@ -86,6 +86,7 @@ export default function AboutPage() {
         <Snake />
         <div className="brcx"></div>
         {/* Experience */}
+        
         <section className="pt-4">
           <div className="flex flex-wrap gap-y-2 items-center justify-between">
             <h1 className="mb-2 text-2xl font-bold dark:text-neutral-200">

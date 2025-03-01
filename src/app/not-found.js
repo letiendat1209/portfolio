@@ -10,7 +10,6 @@ const NotFound = () => {
       <div>
         <strong>Error code: 404</strong>
       </div>
-      <div className="brcx"></div>
       <Link href="/">
         <p>← Quay lại</p>
       </Link>
