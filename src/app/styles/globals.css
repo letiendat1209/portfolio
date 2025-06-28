@@ -53,9 +53,7 @@ h1 {
   line-height: 48px;
   font-family: monospace;
 }
-p {
-  
-}
+
 :root {
   --background-color-light: #ffffff;
   --background-color-dark: #161616;
@@ -190,10 +188,6 @@ html.light {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
-}
-
-.space {
-  margin-bottom: 1.7em;
 }
 
 .resume {

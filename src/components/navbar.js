@@ -10,7 +10,6 @@ import {
   InstagramIcon,
   LibraryIcon,
   LinkedinIcon,
-  MoonIcon,
   PhotoIcon,
   ProjectIcon,
   ScrollIcon,
@@ -142,20 +141,20 @@ export default function Navbar() {
 
   const socialLinks = [
     {
-      href: "https://www.facebook.com/letiendat912",
+      href: process.env.NEXT_PUBLIC_FACEBOOK_URL,
       icon: FacebookIcon,
       label: "Facebook",
       isExternal: true,
     },
-    { href: "", icon: InstagramIcon, label: "Instagram", isExternal: true },
+    // { href: "", icon: InstagramIcon, label: "Instagram", isExternal: true },
     {
-      href: "https://github.com/letiendat1209",
+      href: process.env.NEXT_PUBLIC_GITHUB_URL,
       icon: GithubIcon,
       label: "Github",
       isExternal: true,
     },
     {
-      href: "https://www.linkedin.com/in/%C4%91%E1%BA%A1t-l%C3%AA-ti%E1%BA%BFn-503280326/",
+      href: process.env.NEXT_PUBLIC_LINKEDIN_URL,
       icon: LinkedinIcon,
       label: "Linkedin",
       isExternal: true,

@@ -38,7 +38,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="vi" suppressHydrationWarning>
       <body className="transition-colors ease-out duration-[300ms] antialiased">
         <ThemeProvider attribute="class" defaultTheme="system">
           <div className="flex h-full mx-auto max-w-[720px] pt-[100px] p-4 mb-[168px]">

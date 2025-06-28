@@ -9,9 +9,9 @@ export default function WritingPage() {
         <h1>Blogs - Viết linh tinh</h1>
       </header>
       <article>
-        <p className="space">Những cảm xúc hoặc chỉ đơn giản là viết.</p>
+        <p className="mb-[1.7em]">Những cảm xúc hoặc chỉ đơn giản là viết.</p>
         <hr className="hrlight" />
-        <div className="space"></div>
+        <div className="mb-[1.7em]"></div>
         <p className="leading-[30px] text-[17px] text-[#171717] font-[450] dark:text-white">
           Tìm kiếm các bài viết của tớ
         </p>

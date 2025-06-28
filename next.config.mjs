@@ -6,6 +6,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "avatarfiles.alphacoders.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+      },
     ],
   },
 };

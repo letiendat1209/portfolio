@@ -1,12 +1,18 @@
+"use client";
+import { motion } from "framer-motion";
+
 import "@/app/styles/about.css";
 import Footer from "@/components/footer";
 import Snake from "@/components/snake";
 import Image from "next/image";
+import { SkillSection } from "./section/skill-section";
+import { ExperienceSection } from "./section/experience-section";
 
-export const metadata = {
-  title: "About",
-  description: "About",
-};
+// export const metadata = {
+//   title: "About",
+//   description: "About",
+// };
+
 export default function AboutPage() {
   return (
     <main>
@@ -15,10 +21,18 @@ export default function AboutPage() {
       </header>
 
       <article>
-        <p className="space">Một chút điều thú vị về tớ và những trải lòng.</p>
+        <p className="mb-[1.7em]">
+          Một chút điều thú vị về tớ và những trải lòng.
+        </p>
         <hr className="hrlight" />
-        <div className="space"></div>
-        <div className="titleGroup">
+        <div className="mb-[1.7em]"></div>
+        <motion.div
+          className="titleGroup"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="avatar">
             <Image
               className="avatar"
@@ -32,13 +46,20 @@ export default function AboutPage() {
           <p className="leading-[26px]">
             Frontend Developer / Software Engineer
           </p>
-        </div>
+        </motion.div>
+
         <div className="justify-items-center">
           <Footer />
         </div>
         <hr className="hrlight" />
         {/* About */}
-        <div className="about-content">
+        <motion.div
+          className="about-content"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <p>
             Xin chào, tớ là Lê Tiến Đạt (bot), sinh viên chuyên ngành Kỹ thuật
             phần mềm tại Đại học Nguyễn Tất Thành. Hiện tại tớ đang là sinh viên
@@ -77,8 +98,8 @@ export default function AboutPage() {
             <strong>Lê Tiến Đạt</strong>
           </p>
           <p>© 2025 Lê Tiến Đạt. All rights reserved!</p>
-        </div>
-        <hr className="hrlight"></hr>
+        </motion.div>
+        <hr className="hrlight" />
         <blockquote className="block-quote">
           Mr. Snake eating my contributions.
         </blockquote>
@@ -86,142 +107,10 @@ export default function AboutPage() {
         <Snake />
         <div className="brcx"></div>
         {/* Experience */}
-        
-        <section className="pt-4">
-          <div className="flex flex-wrap gap-y-2 items-center justify-between">
-            <h1 className="mb-2 text-2xl font-bold dark:text-neutral-200">
-              Dự án cá nhân
-            </h1>
-            <div className="px-5 py-5">
-              {/* Experience item*/}
-              <div className="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
-                <div className="relative flex flex-col justify-start pl-12">
-                  <div className="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full dark:bg-neutral-950 w-14 h-14 border-neutral-300 dark:border-neutral-700">
-                    <img src="/about.svg" alt="project" className="w-8 h-8" />
-                  </div>
-                  <p className="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest">
-                    {" "}
-                    21/05/2024 - 30/07/2024{" "}
-                  </p>
-                  <h3 className="my-1 text-lg font-bold dark:text-neutral-100">
-                    E-commerce Shoe Selling Website
-                  </h3>
-                  <p className="mb-1 text-sm font-medium dark:text-neutral-300">
-                    Vị trí: Fullstack
-                  </p>
-                  <div className="ml-4 mb-1 text-sm font-light space-y-0.5">
-                    <p>
-                      Phát triển nền tảng quản lý bán giày toàn diện bằng
-                      ReactJS, Node.js, và MySQL. Chịu trách nhiệm phát triển
-                      fullstack và bảo trì hệ thống.
-                    </p>
-                    <p>
-                      <strong>Frontend</strong>: Tạo giao diện người dùng (UI)
-                      đáp ứng bằng ReactJS và SCSS, bao gồm hiển thị sản phẩm,
-                      tìm kiếm, giỏ hàng, và thanh toán. Sử dụng React Router để
-                      điều hướng và Redux để quản lý trạng thái. Tích hợp
-                      RESTful API để quản lý dữ liệu sản phẩm, người dùng, và
-                      đơn hàng.
-                    </p>
-                    <p>
-                      <strong>Backend</strong>: Phát triển RESTful API với
-                      Node.js và Express, xử lý các dịch vụ liên quan đến sản
-                      phẩm, đơn hàng, và người dùng. Quản lý thiết kế cơ sở dữ
-                      liệu MySQL. Triển khai JWT cho xác thực và bcrypt cho bảo
-                      mật mật khẩu.
-                    </p>
-                    <p className="mb-1 text-sm">
-                      <b className="font-medium dark:text-neutral-300">
-                        Technologies:
-                      </b>
-                      <span className="font-light text-neutral-600 dark:text-neutral-400">
-                        {" "}
-                        ReactJS, Node.js, Express, MySQL, JWT, Redux, Axios,
-                        SCSS. Code Review GPT{" "}
-                      </span>
-                      <b className="font-medium dark:text-neutral-300">
-                        Github:
-                      </b>
-                      <span className="font-light text-neutral-600 dark:text-neutral-400">
-                        <a
-                          href="https://github.com/letiendat1209/SProject_ShoeVibe"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {" "}
-                          https://github.com/letiendat1209/SProject_ShoeVibe
-                        </a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <ExperienceSection />
+        {/* Skills */}
+        <SkillSection />
 
-              <div className="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
-                <div className="relative flex flex-col justify-start pl-12">
-                  <div className="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full dark:bg-neutral-950 w-14 h-14 border-neutral-300 dark:border-neutral-700">
-                    <img src="/about.svg" alt="project" className="w-8 h-8" />
-                  </div>
-                  <p className="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest">
-                    {" "}
-                    06/0/2024 - 19/11/2024.{" "}
-                  </p>
-                  <h3 className="my-1 text-lg font-bold dark:text-neutral-100">
-                    BOT Movie Website
-                  </h3>
-                  <p className="mb-1 text-sm font-medium dark:text-neutral-300">
-                    Vị trí: Fullstack
-                  </p>
-                  <div className="ml-4 mb-1 text-sm font-light space-y-0.5">
-                    <p>
-                      Phát triển nền tảng xem phim trực tuyến và quản lý phim
-                      toàn diện bằng ReactJS, Node.js, và MySQL. Chịu trách
-                      nhiệm phát triển fullstack và bảo trì hệ thống.
-                    </p>
-                    <p>
-                      <strong>Frontend</strong>: Tạo giao diện người dùng (UI)
-                      đáp ứng bằng ReactJS và SCSS, bao gồm hiển thị sản phẩm,
-                      tìm kiếm, giỏ hàng, và thanh toán. Sử dụng React Router để
-                      điều hướng và Redux để quản lý trạng thái. Tích hợp
-                      RESTful API để quản lý dữ liệu sản phẩm, người dùng, và
-                      đơn hàng.
-                    </p>
-                    <p>
-                      <strong>Backend</strong>: Phát triển RESTful API với
-                      Node.js và Express, xử lý các dịch vụ liên quan đến sản
-                      phẩm, đơn hàng, và người dùng. Quản lý thiết kế cơ sở dữ
-                      liệu MySQL. Triển khai JWT cho xác thực và bcrypt cho bảo
-                      mật mật khẩu.
-                    </p>
-                    <p className="mb-1 text-sm">
-                      <b className="font-medium dark:text-neutral-300">
-                        Technologies:
-                      </b>
-                      <span className="font-light text-neutral-600 dark:text-neutral-400">
-                        {" "}
-                        ReactJS, Node.js, Express, MySQL, JWT, Redux, Axios,
-                        SCSS. Code Review GPT{" "}
-                      </span>
-                      <b className="font-medium dark:text-neutral-300">
-                        Github:
-                      </b>
-                      <span className="font-light text-neutral-600 dark:text-neutral-400">
-                        <a
-                          href="https://github.com/letiendat1209/bot-movie"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {" "}
-                          https://github.com/letiendat1209/bot-movie
-                        </a>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <div className="brcx"></div>
         <a href="https://www.facebook.com/letiendat912" target="_blank">
           <div className="mt-3 font-semibold">
